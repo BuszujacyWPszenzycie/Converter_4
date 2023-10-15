@@ -1,0 +1,16 @@
+@use 'colors' as *;
+
+@mixin btn {
+	width: auto;
+	height: 50px;
+	border: none;
+	margin: 0.5rem;
+	padding: 1rem;
+	background-color: transparent;
+	font-size: 1.9rem;
+	text-transform: uppercase;
+	color: $white;
+	cursor: pointer;
+	font-family: inherit;
+	transition: all 0.4s;
+}

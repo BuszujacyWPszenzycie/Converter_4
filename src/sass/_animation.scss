@@ -1,0 +1,27 @@
+@use 'colors' as *;
+
+@keyframes borderAnimation {
+	from {
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		bottom: -5px;
+		right: -5px;
+		border: 1px solid $red;
+		z-index: -1;
+		opacity: 1;
+	}
+
+	to {
+		content: '';
+		position: absolute;
+		top: -20px;
+		left: -20px;
+		bottom: -20px;
+		right: -20px;
+		border: 1px solid $red;
+		z-index: -1;
+		opacity: 0;
+	}
+}
