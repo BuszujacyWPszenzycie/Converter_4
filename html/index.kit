@@ -15,7 +15,9 @@
 
       </div>
       <nav class="nav">
+
         <div class="wrapper__buttons">
+          <a href="."><i class="fa-solid fa-arrows-rotate nav__icon"></i></a>
           <button class="btn btn__nav"><span class="btn__span">Długość</span></button>
           <button class="btn btn__nav"><span class="btn__span">Temperatura</span></button>
           <button class="btn btn__nav"><span class="btn__span">Waga</span></button>
@@ -37,18 +39,42 @@
       </div>
 
       <div class="modal modal__one">
-        długość
+
+        <div class="box__modal">
+          <h3 class="title__modal">from</h3>
+          <div class="box__modal-buttons">
+            <button class="btn__modal">metr</button>
+            <button class="btn__modal">cal</button>
+            <button class="btn__modal">stopa</button>
+            <button class="btn__modal">jard</button>
+            <button class="btn__modal">mila lądowa</button>
+            <button class="btn__modal">mila morska</button>
+          </div>
+        </div>
+
+        <div class="box__modal">
+          <h3 class="title__modal">to</h3>
+          <div class="box__modal-buttons">
+            <button class="btn__modal">metr</button>
+            <button class="btn__modal">cal</button>
+            <button class="btn__modal">stopa</button>
+            <button class="btn__modal">jard</button>
+            <button class="btn__modal">mila lądowa</button>
+            <button class="btn__modal">mila morska</button>
+          </div>
+        </div>
+
       </div>
-      <div class="modal modal__one">
+      <div class="modal modal__two">
         temperatura
       </div>
-      <div class="modal modal__one">
+      <div class="modal modal__three">
         waga
       </div>
-      <div class="modal modal__one">
+      <div class="modal modal__four">
         objętość
       </div>
-      <div class="modal modal__one">
+      <div class="modal modal__five">
         kw na km
       </div>
 
@@ -67,6 +93,7 @@
     AOS.init();
   </script>
   <script src="./dist/js/switch.min.js"></script>
+  <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>

@@ -13,3 +13,23 @@
 	font-family: inherit;
 	transition: all 0.4s;
 }
+
+@mixin btnFrom {
+	width: 140px;
+	padding: 1rem;
+	font-size: 1.6rem;
+	height: 50px;
+	border: none;
+	background-color: $red;
+	color: $white;
+	text-transform: uppercase;
+	font-family: inherit;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.4s;
+
+	&:hover {
+		background-color: $gold;
+		color: $dark;
+	}
+}
