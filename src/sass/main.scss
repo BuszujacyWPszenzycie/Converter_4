@@ -76,10 +76,6 @@ body {
 			animation: borderAnimation 1s;
 		}
 	}
-
-	&__modal {
-		@include btnFrom;
-	}
 }
 
 .nav {
@@ -139,32 +135,9 @@ body {
 	color: $sunny;
 }
 
-.title {
-	font-size: 5rem;
-	text-transform: uppercase;
-	font-family: 'Space Mono', monospace;
-	color: $red;
-	padding: 4rem;
-	padding-bottom: 0;
-
-	&__modal {
-		font-size: 3rem;
-		// text-transform: uppercase;
-		margin-bottom: 2rem;
-	}
-}
-
-.subtitle {
-	font-size: 2rem;
-	padding: 4rem;
-	color: $lightred;
-}
-
 .modal {
 	padding-top: 10rem;
 	display: flex;
-	// justify-content: center;
-	// align-items: center;
 	flex-direction: column;
 	position: absolute;
 	bottom: 0;
@@ -174,6 +147,34 @@ body {
 	background-color: $white;
 	transform: translateX(-1000px);
 	transition: transform 1s;
+	&__btn {
+		@include radioLabel;
+	}
+
+	&__title {
+		font-size: 3rem;
+		// text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+
+	&__input {
+		display: none;
+	}
+}
+
+.title {
+	font-size: 5rem;
+	text-transform: uppercase;
+	font-family: 'Space Mono', monospace;
+	color: $red;
+	padding: 4rem;
+	padding-bottom: 0;
+}
+
+.subtitle {
+	font-size: 2rem;
+	padding: 4rem;
+	color: $lightred;
 }
 
 .body-night {
@@ -195,4 +196,9 @@ body {
 
 .show-modal {
 	transform: translateY(0);
+}
+
+input[type='radio']:checked + label {
+	background-color: $gold;
+	color: $dark;
 }

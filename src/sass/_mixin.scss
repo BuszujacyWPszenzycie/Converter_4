@@ -14,11 +14,12 @@
 	transition: all 0.4s;
 }
 
-@mixin btnFrom {
-	width: 140px;
-	padding: 1rem;
-	font-size: 1.6rem;
-	height: 50px;
+@mixin radioLabel {
+	display: block;
+	text-align: center;
+	width: 130px;
+	font-size: 1.5rem;
+	height: 55px;
 	border: none;
 	background-color: $red;
 	color: $white;
@@ -27,6 +28,10 @@
 	letter-spacing: 1px;
 	cursor: pointer;
 	transition: background-color 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
 
 	&:hover {
 		background-color: $gold;
