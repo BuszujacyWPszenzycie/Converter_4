@@ -38,3 +38,29 @@
 		color: $dark;
 	}
 }
+
+@mixin resultBtn {
+	// display: block;
+	// text-align: center;
+	width: 250px;
+	font-size: 1.5rem;
+	height: 55px;
+	border: none;
+	background-color: $red;
+	color: $white;
+	text-transform: uppercase;
+	font-family: inherit;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin: 2rem;
+
+	&:hover {
+		background-color: $gold;
+		color: $dark;
+	}
+}

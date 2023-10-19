@@ -31,6 +31,7 @@ body {
 .box {
 	width: 50%;
 	height: 100%;
+	// background-color: $lightgrey;
 
 	&__left {
 		position: relative;
@@ -52,10 +53,41 @@ body {
 		margin: 2rem;
 		padding: 2rem;
 		border: 1px solid $grey;
+
+		&-big {
+			background-color: $lightgrey;
+			box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.4);
+		}
+
 		&-buttons {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+		}
+
+		&-result {
+			border: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+		}
+
+		&-inputs {
+			width: 60%;
+			height: 250px;
+			background-color: $lightgrey;
+			box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.4);
+		}
+
+		&-calculate {
+			width: 40%;
+			height: 250px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: $lightgrey;
+			box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 0.4);
 		}
 	}
 }
@@ -136,7 +168,7 @@ body {
 }
 
 .modal {
-	padding-top: 10rem;
+	padding-top: 7rem;
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -153,12 +185,42 @@ body {
 
 	&__title {
 		font-size: 3rem;
-		// text-transform: uppercase;
 		margin-bottom: 2rem;
+		// background-color: $lightgrey;
 	}
 
 	&__input {
 		display: none;
+	}
+}
+
+.result {
+	&__input {
+		width: 90%;
+		height: 40px;
+		margin-top: 1rem;
+		background-color: $red;
+		border: none;
+		color: $white;
+		font-family: inherit;
+		padding: 1rem;
+		font-size: 1.5rem;
+		&::placeholder {
+			color: $grey;
+		}
+		&-span {
+			// width: 100px;
+		}
+	}
+
+	&__title {
+		padding: 0.5rem;
+		font-size: 2.5rem;
+		// color: $white;
+	}
+
+	&__btn {
+		@include resultBtn;
 	}
 }
 

@@ -47,10 +47,10 @@
           gotowe!</h3>
       </div>
 
-      <div class="modal modal__one">
+      <div class="modal modal__one show-modal ">
 
-        <div class="box__modal">
-          <h3 class="modal__title">from</h3>
+        <div class="box__modal box__modal-big">
+          <h3 class="modal__title">jednostka wyjściowa</h3>
           <div class="box__modal-buttons">
 
             <div class="box__modal-button">
@@ -65,12 +65,12 @@
 
             <div class="box__modal-button">
               <input type="radio" name="from" id="foot-from" class="modal__input"><label for="foot-from"
-                class="modal__btn">foot</label>
+                class="modal__btn">stopa</label>
             </div>
 
             <div class="box__modal-button">
               <input type="radio" name="from" id="yard-from" class="modal__input"><label for="yard-from"
-                class="modal__btn">yard</label>
+                class="modal__btn">jard</label>
             </div>
 
             <div class="box__modal-button">
@@ -87,8 +87,8 @@
           </div>
         </div>
 
-        <div class="box__modal">
-          <h3 class="modal__title">to</h3>
+        <div class="box__modal box__modal-big">
+          <h3 class="modal__title">jednostka docelowa</h3>
           <div class="box__modal-buttons">
             <div class="box__modal-button">
               <input type="radio" name="to" id="meter-to" class="modal__input"><label for="meter-to"
@@ -102,12 +102,12 @@
 
             <div class="box__modal-button">
               <input type="radio" name="to" id="foot-to" class="modal__input"><label for="foot-to"
-                class="modal__btn">foot</label>
+                class="modal__btn">stopa</label>
             </div>
 
             <div class="box__modal-button">
               <input type="radio" name="to" id="yard-to" class="modal__input"><label for="yard-to"
-                class="modal__btn">yard</label>
+                class="modal__btn">jard</label>
             </div>
 
             <div class="box__modal-button">
@@ -119,6 +119,26 @@
               <input type="radio" name="to" id="sea-mile-to" class="modal__input"><label for="sea-mile-to"
                 class="modal__btn">mila morska</label>
             </div>
+          </div>
+        </div>
+
+        <div class="box__modal box__modal-result">
+          <div class="box__modal box__modal-inputs">
+
+            <div class="box__modal-inputs--inner">
+              <p class="result__title">wartość do przeliczenia:</p>
+              <input type="number" class="result__input" placeholder="Wpisz wartość">
+            </div>
+
+            <div class="box__modal-inputs--inner">
+              <p class="result__title">wynik:</p>
+              <input type="number" class="result__input" disabled>
+            </div>
+
+          </div>
+          <div class="box__modal box__modal-calculate">
+            <button class="result__btn">wylicz</button>
+            <button class="result__btn">wyczyść</button>
           </div>
         </div>
 
